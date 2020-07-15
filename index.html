@@ -6,35 +6,88 @@
 </head>
 <body>
     <header>
-      <navbar>
+      <navbar>                              <!--Navigation barre-->
+        <h1>My Portfolio</h1>
         <ul>
           <li>Home</li>
-          <li>About</li>
-          <li>Work</li>
-          <li>Resume</li>
-          <li>Contact</li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Work">Work</a></li>
+          <li><a href="#Resume">Resume</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </navbar>
+      
     </header>
     <main>
-      <section class="About"></section>
-      <section class="Work"></section>
-      <section class="Resume">
+      <section id="About">               <!--about Section-->
+        <dl>
+          <dt>Hi , i am Nazim</dt>
+          <dd>a student Full-Stack Web Developer </dd>
+          </dl>
+      </section>
+
+      <section id="Work">                  <!--Work Section-->
+        <h2>My Works</h2>
+          <figure>
+            <img src="res/IMG1.jpg" alt="Image test">
+            <figcaption>It is my first work</figcaption>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br>
+              qui maxime harum in ut provident iure cum, voluptas adipisci <br>
+              sunt eveniet dolorum impedit!</p>
+              <input type="submit" value="Read more">
+          </figure>
+          <figure>
+            <img src="res/IMG2.jpg" alt="Image test">
+            <figcaption>It is my second work</figcaption>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br>
+              qui maxime harum in ut provident iure cum, voluptas adipisci <br>
+              sunt eveniet dolorum impedit!</p>
+              <input type="submit" value="Read more">
+          </figure>
+          <figure>
+            <img src="res/IMG3.jpg" alt="Image test">
+            <figcaption>It is my third work</figcaption>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br>
+              qui maxime harum in ut provident iure cum, voluptas adipisci <br>
+              sunt eveniet dolorum impedit!</p>
+              <input type="submit" value="Read more">
+          </figure>
+          <figure>
+            <img src="res/IMG4.jpg" alt="Image test">
+            <figcaption>It is my fourth work</figcaption>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br>
+              qui maxime harum in ut provident iure cum, voluptas adipisci <br>
+              sunt eveniet dolorum impedit!</p>
+              <input type="submit" value="Read more">
+          </figure>
+      </section>
+
+      <section id="Resume">               <!--Resume Section-->
+        <h2>Resume in video</h2>
         <div>
           <iframe></iframe>
         </div>
       </section>
-      <section class="Contact">
+
+      <section id="Contact">              <!--Contact Section-->
+        <h2>Contact me</h2>
         <form>
-          <label>Enter your name:</label>
-          <input type="text" name="name">
-          <label>Enter your E-mail:</label>
-          <input type="email" name="email">
+          <label>Enter your name:</label><br>
+          <input type="text" name="name"><br>
+          <label>Enter your E-mail:</label><br>
+          <input type="email" name="email"><br>
+          <label>Your message:</label><br>
+          <textarea name="message" rows="5" cols="33"></textarea><br>
+          <input type="submit" value="send">
         </form>
       </section>
     </main>
-    <footer>
-
+    <footer>                            <!--Footer-->
+      <a href="#">Copyright © 2020</a>
     </footer>
 </body>
 </html>
