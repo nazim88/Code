@@ -2,14 +2,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HTML Checkpoint</title>
 </head>
 <body>
     <header>
+
       <navbar>                              <!--Navigation barre-->
         <h1>My Portfolio</h1>
         <ul>
-          <li>Home</li>
+          <li><a href="#">Home</a></li>
           <li><a href="#About">About</a></li>
           <li><a href="#Work">Work</a></li>
           <li><a href="#Resume">Resume</a></li>
@@ -19,11 +20,13 @@
       
     </header>
     <main>
+
       <section id="About">               <!--about Section-->
         <dl>
-          <dt>Hi , i am Nazim</dt>
-          <dd>a student Full-Stack Web Developer </dd>
+          <dt>Hi,<br>I'm Nazim<br>Web developer</dt>
+          <dd>Full-Stack JS</dd>
           </dl>
+          <input onclick="window.location.href='#Resume'" type="button" value="Resume">
       </section>
 
       <section id="Work">                  <!--Work Section-->
@@ -67,9 +70,24 @@
       </section>
 
       <section id="Resume">               <!--Resume Section-->
-        <h2>Resume in video</h2>
         <div>
-          <iframe></iframe>
+          <h2>About me</h2>
+          <img src="#" alt="Photo">  
+          <h4>Nazim</h4>
+          <span>Full-Stack JS developer</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+            Reiciendis expedita labore magni pariatur atque non deleniti,<br>
+            qui maxime harum in ut provident iure cum, voluptas adipisci <br>
+            sunt eveniet dolorum impedit!</p>
+            <input type="submit" value="Download Printable resume">
+        </div>
+        <div>
+          <span>My skills</span><br>
+          <a><img src="res/html5.png" alt="image"></a>
+          <a><img src="res/css3.png" alt="image"></a>
+          <a><img src="res/js.png" alt="image"></a>
+          <a><img src="res/react.png" alt="image"></a>
+          <a><img src="res/nodeJS.png" alt="image"></a>
         </div>
       </section>
 
@@ -86,8 +104,9 @@
         </form>
       </section>
     </main>
+
     <footer>                            <!--Footer-->
-      <a href="#">Copyright © 2020</a>
+      <a href="#">Copyright © HTML Checkpoint 2020</a>
     </footer>
 </body>
 </html>
