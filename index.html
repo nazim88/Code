@@ -1,14 +1,16 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Checkpoint</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Checkpoint</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="logo">My Portfolio</h1>
     <header>
-
-      <navbar>                              <!--Navigation barre-->
-        <h1>My Portfolio</h1>
+      <!-----------------------------Navigation Barre------------------------------>
+      <nav>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#About">About</a></li>
@@ -16,97 +18,182 @@
           <li><a href="#Resume">Resume</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
-      </navbar>
-      
+      </nav>
     </header>
     <main>
+      <!-----------------------------about Section------------------------------>
+      <section id="About">
+        <h2>Hi, i'm Nazim</h2>
 
-      <section id="About">               <!--about Section-->
-        <dl>
-          <dt>Hi,<br>I'm Nazim<br>Web developer</dt>
-          <dd>Full-Stack JS</dd>
-          </dl>
-          <input onclick="window.location.href='#Resume'" type="button" value="Resume">
+        <h3>a Fullstack JS developer</h3>
+        <input
+          type="button"
+          value="Resume"
+          onclick="window.location.href='#Resume'"
+        />
       </section>
-
-      <section id="Work">                  <!--Work Section-->
+      <!-----------------------------Work Section------------------------------>
+      <section id="Work">
         <h2>My Works</h2>
+        <div class="Projects">
           <figure>
-            <img src="res/IMG1.jpg" alt="Image test">
+            <img src="res/IMG1.jpg" alt="Image test" />
             <figcaption>It is my first work</figcaption>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-              Reiciendis expedita labore magni pariatur atque non deleniti,<br>
-              qui maxime harum in ut provident iure cum, voluptas adipisci <br>
-              sunt eveniet dolorum impedit!</p>
-              <input type="submit" value="Read more">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br />
+              qui maxime harum in ut provident iure cum, voluptas adipisci
+              <br />
+              sunt eveniet dolorum impedit!
+            </p>
+            <input
+              type="button"
+              value="View more"
+              onclick="window.location.href='#'"
+            />
           </figure>
           <figure>
-            <img src="res/IMG2.jpg" alt="Image test">
+            <img src="res/IMG2.jpg" alt="Image test" />
             <figcaption>It is my second work</figcaption>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-              Reiciendis expedita labore magni pariatur atque non deleniti,<br>
-              qui maxime harum in ut provident iure cum, voluptas adipisci <br>
-              sunt eveniet dolorum impedit!</p>
-              <input type="submit" value="Read more">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br />
+              qui maxime harum in ut provident iure cum, voluptas adipisci
+              <br />
+              sunt eveniet dolorum impedit!
+            </p>
+            <input
+              type="button"
+              value="View more"
+              onclick="window.location.href='#'"
+            />
           </figure>
           <figure>
-            <img src="res/IMG3.jpg" alt="Image test">
+            <img src="res/IMG3.jpg" alt="Image test" />
             <figcaption>It is my third work</figcaption>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-              Reiciendis expedita labore magni pariatur atque non deleniti,<br>
-              qui maxime harum in ut provident iure cum, voluptas adipisci <br>
-              sunt eveniet dolorum impedit!</p>
-              <input type="submit" value="Read more">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br />
+              qui maxime harum in ut provident iure cum, voluptas adipisci
+              <br />
+              sunt eveniet dolorum impedit!
+            </p>
+            <input
+              type="button"
+              value="View more"
+              onclick="window.location.href='#'"
+            />
           </figure>
           <figure>
-            <img src="res/IMG4.jpg" alt="Image test">
+            <img src="res/IMG4.jpg" alt="Image test" />
             <figcaption>It is my fourth work</figcaption>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-              Reiciendis expedita labore magni pariatur atque non deleniti,<br>
-              qui maxime harum in ut provident iure cum, voluptas adipisci <br>
-              sunt eveniet dolorum impedit!</p>
-              <input type="submit" value="Read more">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br />
+              qui maxime harum in ut provident iure cum, voluptas adipisci
+              <br />
+              sunt eveniet dolorum impedit!
+            </p>
+            <input
+              type="button"
+              value="View more"
+              onclick="window.location.href='#'"
+            />
           </figure>
-      </section>
-
-      <section id="Resume">               <!--Resume Section-->
-        <div>
-          <h2>About me</h2>
-          <img src="#" alt="Photo">  
-          <h4>Nazim</h4>
-          <span>Full-Stack JS developer</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-            Reiciendis expedita labore magni pariatur atque non deleniti,<br>
-            qui maxime harum in ut provident iure cum, voluptas adipisci <br>
-            sunt eveniet dolorum impedit!</p>
-            <input type="submit" value="Download Printable resume">
+          <figure>
+            <img src="res/IMG4.jpg" alt="Image test" />
+            <figcaption>It is my fourth work</figcaption>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br />
+              qui maxime harum in ut provident iure cum, voluptas adipisci
+              <br />
+              sunt eveniet dolorum impedit!
+            </p>
+            <input
+              type="button"
+              value="View more"
+              onclick="window.location.href='#'"
+            />
+          </figure>
+          <figure>
+            <img src="res/IMG4.jpg" alt="Image test" />
+            <figcaption>It is my fourth work</figcaption>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Reiciendis expedita labore magni pariatur atque non deleniti,<br />
+              qui maxime harum in ut provident iure cum, voluptas adipisci
+              <br />
+              sunt eveniet dolorum impedit!
+            </p>
+            <input
+              type="button"
+              value="View more"
+              onclick="window.location.href='#'"
+            />
+          </figure>
         </div>
-        <div>
-          <span>My skills</span><br>
-          <a><img src="res/html5.png" alt="image"></a>
-          <a><img src="res/css3.png" alt="image"></a>
-          <a><img src="res/js.png" alt="image"></a>
-          <a><img src="res/react.png" alt="image"></a>
-          <a><img src="res/nodeJS.png" alt="image"></a>
+      </section>
+      <!-----------------------------Resume Section------------------------------>
+      <section id="Resume">
+        <h2>Resume</h2>
+        <div class="grid">
+          <div class="id">
+            <img src="res/ID-photo.jpg" alt="Photo" />
+
+            <div class="cv">
+              <h3>About me</h3>
+              <h4>I'am Nazim</h4>
+              <span>Full-Stack JS developer</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Reiciendis expedita labore magni pariatur atque non deleniti,<br />
+                qui maxime harum in ut provident iure cum, voluptas adipisci
+                <br />
+                sunt eveniet dolorum impedit!
+              </p>
+
+              <button type="button">Download Printable resume</button>
+            </div>
+          </div>
+          <div class="skills">
+            <h3>My skills</h3>
+            <br />
+            <i style="color: #e44d26;" class="fab fa-html5 fa-4x"></i>
+            <i style="color: #264de4;" class="fab fa-css3-alt fa-4x"></i>
+            <i style="color: #f7df1e;" class="fab fa-js fa-4x"></i>
+            <i style="color: #563d7c;" class="fab fa-bootstrap fa-4x"></i>
+            <i style="color: #4d8f48;" class="fab fa-node fa-4x"></i>
+            <i style="color: #15aabf;" class="fab fa-react fa-4x"></i>
+          </div>
         </div>
       </section>
-
-      <section id="Contact">              <!--Contact Section-->
-        <h2>Contact me</h2>
-        <form>
-          <label>Enter your name:</label><br>
-          <input type="text" name="name"><br>
-          <label>Enter your E-mail:</label><br>
-          <input type="email" name="email"><br>
-          <label>Your message:</label><br>
-          <textarea name="message" rows="5" cols="33"></textarea><br>
-          <input type="submit" value="send">
-        </form>
+      <!-----------------------------Contact Section------------------------------>
+      <section id="Contact">
+        <div class="form">
+          <h2>Contact</h2>
+          <form>
+            <label>Enter your name:</label><br />
+            <input type="text" name="name" /><br />
+            <label>Enter your E-mail:</label><br />
+            <input type="email" name="email" /><br />
+            <label>Your message:</label><br />
+            <textarea name="message" rows="5" cols="33"></textarea><br />
+            <input type="submit" value="send" />
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer>                            <!--Footer-->
-      <a href="#">Copyright © HTML Checkpoint 2020</a>
+    <footer>
+      <!-----------------------------Footer Section------------------------------>
+      <a href="#">Copyright © CSS Checkpoint 2020</a>
+      <div>
+        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
