@@ -1,0 +1,486 @@
+/**************Fonts****************/
+@font-face {
+  font-family: "freebooter";
+  src: url("../res/fonts/freebooterscript.ttf");
+}
+@font-face {
+  font-family: "GreatVibes";
+  src: url("../res/fonts/GreatVibes-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../res/fonts/Lato-Regular.ttf");
+}
+body {
+  font-family: serif;
+  color: black;
+  margin: 0;
+}
+.logo {
+  text-align: center;
+  font-size: 2.4em;
+  font-family: freebooter;
+  color: white;
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 1em;
+  border-bottom: 0.01em solid white;
+}
+header {
+  position: sticky;
+  top: 0px;
+  margin-top: -1em;
+}
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  font-family: Lato;
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  flex: 1 1 auto;
+  text-align: center;
+  position: relative;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+}
+nav a:hover {
+  color: #efe536;
+  background-color: #474747;
+  text-shadow: 0px 0px 6px #efe536;
+}
+
+@media screen and (max-width: 576px) {
+  /****************************************** Media Queries Navbar ***********************************************/
+  .brand {
+    text-align: center;
+    font-size: 1.4em;
+  }
+  header {
+    position: sticky;
+    top: 0px;
+  }
+  nav ul {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+  }
+  nav a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
+  }
+  nav a:hover {
+    color: #efe536;
+    background-color: #474747;
+    text-shadow: 0px 0px 6px #efe536;
+  }
+  .top {
+    position: fixed;
+    top: 7%;
+    left: 0;
+    z-index: 99;
+    color: #666;
+    padding: 8px 8px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-transform: lowercase;
+    text-decoration: none;
+    line-height: 12px;
+    cursor: pointer;
+  }
+} /***************************************/
+#About {
+  background-color: #e9e8e8;
+  background-image: url("../res/About.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: revert;
+  margin-top: -1.5em;
+  padding: 0% 0% 20% 0%;
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+}
+#About h2 {
+  margin: 0 0 0 2em;
+  padding-top: 4em;
+  font-size: 5em;
+  font-family: Lato;
+}
+#About h3 {
+  margin: 0 0 0 8em;
+
+  font-size: 2.5em;
+  font-family: Lato;
+  font-style: oblique;
+}
+#About input {
+  font-size: 1.5em;
+  margin: 0 61% 0 28%;
+  padding: 8px 8px 10px;
+  background: #377cc0;
+  line-height: 12px;
+  cursor: pointer;
+  color: white;
+}
+
+#About input:hover {
+  font-size: 1.5em;
+  margin: 0 61% 0 28%;
+  padding: 8px 8px 10px;
+  background-color: #4b9700;
+  line-height: 12px;
+  cursor: pointer;
+  color: white;
+}
+/****************************************** Media Queries About section ***********************************************/
+@media screen and (max-width: 576px) {
+  #About {
+    background-color: #e9e8e8;
+    background-image: url("../res/About.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: contain;
+    padding: 0% 0% 39% 0%;
+    margin-top: -1.5em;
+
+    color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+  }
+  #About h2 {
+    margin: 0 0 0 1em;
+    font-size: 2em;
+    padding-top: 4em;
+
+    font-family: Lato;
+  }
+  #About h3 {
+    margin: 0 0 0 1em;
+    font-size: 1.3em;
+    font-family: AlexBrush;
+    font-style: oblique;
+  }
+  #About .button {
+    font-size: 0.9em;
+    margin: 0 55% 0 20%;
+    padding: 8px 8px 10px;
+    background: #377cc0;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 12px;
+    cursor: pointer;
+    color: white;
+  }
+} /***************************************/
+#work {
+  padding-top: 1em;
+}
+#Work h2 {
+  text-align: center;
+  font-family: freebooter;
+  font-size: 4em;
+}
+.Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-bottom: 3em;
+}
+.Projects h2 {
+  padding-left: 37%;
+  margin-left: 26%;
+  width: auto;
+  height: 2em;
+  text-align: center;
+}
+.Projects figure {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1em;
+  margin: 1em 0em 0em 4.4em;
+  background-color: #1e1e1e;
+  color: white;
+}
+.Projects figure input {
+  padding: 15px 32px;
+  cursor: pointer;
+}
+.Projects figure input:hover {
+  background-color: #4b9700;
+  color: white;
+}
+.Projects figure img {
+  width: -moz-available;
+}
+.Projects figure p {
+  text-align: justify;
+  font-family: Lato;
+  font-size: 0.9em;
+}
+.Projects figure figcaption {
+  font-family: Lato;
+  font-size: 2.5em;
+  padding-top: 0.5em;
+}
+/****************************************** Media Queries Work section ***********************************************/
+@media screen and (max-width: 576px) {
+  .Projects figure {
+    padding: 2em;
+    margin: 1% 0%;
+  }
+  #Work {
+    padding-top: 13em;
+  }
+  #Work h2 {
+    font-size: 3em;
+  }
+} /***************************************/
+#Resume {
+  background-color: #1a1a1a;
+  padding-top: 1em;
+  padding-bottom: 10em;
+  color: white;
+}
+#Resume button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+#Resume button:hover {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #4b9700;
+}
+#Resume h2 {
+  text-align: center;
+  font-family: freebooter;
+  font-size: 4em;
+}
+#Resume .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 4em 0em 1em 0em;
+}
+#Resume .id {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  border-right: 0.1em solid;
+  border-left: 0.1em solid;
+  border-radius: 10em;
+}
+#Resume .id img {
+  grid-column: 1;
+  grid-row: 1/2;
+  padding: 1em 0em 0em 6.8em;
+}
+#Resume .CV {
+  grid-column: 2;
+  grid-row: 1/2;
+}
+#Resume .skills {
+  padding: 2em 0em 0em 0em;
+  text-align: center;
+  border-right: 0.1em solid;
+  border-left: 0.1em solid;
+  border-radius: 10em;
+}
+#Resume .skills i {
+  padding: 0em 0.5em 0em 0em;
+}
+/****************************************** Media Queries Resume section ***********************************************/
+@media screen and (max-width: 576px) {
+  #Resume {
+    padding-top: 13em;
+  }
+  #Resume .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 4em 0em 1em 0em;
+  }
+  #Resume .CV {
+    grid-column: 1;
+    grid-row: 2/2;
+    text-align: center;
+  }
+  #Resume .id {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+  #Resume .id img {
+    padding-left: 19.8%;
+  }
+  #Resume .skills {
+    padding: 2em 0em 0em 0em;
+    text-align: center;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+  #Resume h2 {
+    text-align: center;
+    font-family: freebooter;
+    font-size: 3em;
+  }
+  #Resume .skills h3 {
+    font-family: AlexBrush;
+    font-size: 2em;
+  }
+  #Resume .skills i {
+    padding: 0em 1em 1em 1em;
+  }
+} /***************************************/
+
+#Contact {
+  background-color: #f7f7f7;
+}
+.form {
+  font-family: Lato;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 16px;
+  background: #f7f7f7;
+}
+form {
+  margin-left: 35%;
+}
+.form h2 {
+  background: #1a1a1a;
+  padding: 20px 0;
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -16px -16px 16px -16px;
+  font-family: freebooter;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="submit"],
+.form textarea,
+.form select {
+  width: 46%;
+  background: #fff;
+  margin-bottom: 3%;
+  border: 1px solid #ccc;
+  padding: 1%;
+  color: #555;
+  font: Lato;
+}
+
+.form input[type="submit"],
+.form input[type="button"] {
+  width: 8%;
+  padding: 1%;
+  background: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
+}
+.form input[type="submit"]:hover,
+.form input[type="button"]:hover {
+  background: #4b9700;
+}
+/****************************************** Media Queries form section ***********************************************/
+@media screen and (max-width: 576px) {
+  form {
+    margin-left: 15%;
+  }
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="submit"],
+  .form textarea,
+  .form select {
+    width: 82%;
+  }
+  .form input[type="submit"],
+  .form input[type="button"] {
+    width: 46%;
+  }
+}
+/***************************************/
+footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid #1e1e1e;
+  padding: 1em 6em 1em 7em;
+  display: flex;
+  flex-direction: row;
+}
+footer a {
+  text-decoration: none;
+  font-size: 1em;
+  font-family: Lato;
+  color: #1e1e1e;
+  padding-top: 0.5em;
+}
+footer div {
+  padding-left: 45em;
+}
+footer div i {
+  padding-left: 1em;
+  cursor: pointer;
+}
+footer div i:hover {
+  padding-left: 1em;
+  color: #4b9700;
+}
+/****************************************** Media Queries footer section ***********************************************/
+@media screen and (max-width: 576px) {
+  footer {
+    background-color: #f7f7f7;
+    border-top: 1px solid #1e1e1e;
+    display: flex;
+    padding: 1em 0em 0em 0em;
+    flex-direction: column;
+  }
+  footer div {
+    padding-left: 0;
+    text-align: center;
+  }
+  footer a {
+    text-align: center;
+  }
+  footer div i {
+    padding-left: 1em;
+    cursor: pointer;
+  }
+  footer div i:hover {
+    padding-left: 1em;
+    color: #4b9700;
+  }
+} /***************************************/
