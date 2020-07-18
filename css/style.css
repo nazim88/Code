@@ -18,7 +18,7 @@ body {
 }
 .logo {
   text-align: center;
-  font-size: 2.4em;
+  font-size: 3em;
   font-family: freebooter;
   color: white;
   background-color: #1e1e1e;
@@ -291,9 +291,8 @@ nav a:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  border-right: 0.1em solid;
-  border-left: 0.1em solid;
-  border-radius: 10em;
+  border-block-style: inset;
+  border-radius: 2em;
 }
 #Resume .id img {
   grid-column: 1;
@@ -305,11 +304,10 @@ nav a:hover {
   grid-row: 1/2;
 }
 #Resume .skills {
-  padding: 2em 0em 0em 0em;
+  padding: 3em 0em 0em 0em;
   text-align: center;
-  border-right: 0.1em solid;
-  border-left: 0.1em solid;
-  border-radius: 10em;
+  border-block-style: inset;
+  border-radius: 2em;
 }
 #Resume .skills i {
   padding: 0em 0.5em 0em 0em;
@@ -384,7 +382,7 @@ form {
   font-weight: 300;
   text-align: center;
   color: #fff;
-  margin: -16px -16px 16px -16px;
+  margin: -25px -16px 16px -16px;
   font-family: freebooter;
 }
 .form input[type="text"],
@@ -440,6 +438,7 @@ footer {
   padding: 1em 6em 1em 7em;
   display: flex;
   flex-direction: row;
+  margin-top: -1em;
 }
 footer a {
   text-decoration: none;
